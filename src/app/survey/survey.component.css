@@ -1,0 +1,17 @@
+.card-body{
+    background-image: url(./../../assets/4.jpg);
+    color: aliceblue
+}
+
+li{
+    font-size: 22px;
+    margin-left: 45px;
+}
+
+.alert{
+    padding: 0px;
+}
+
+.form-check-input{
+    padding-left: 35px
+}

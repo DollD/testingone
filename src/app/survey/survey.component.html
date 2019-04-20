@@ -1,0 +1,130 @@
+<div class="card">
+  <div class="card-header bg-dark text-white"><img src="./../../assets/logo2.png" style="width:100px;height: 50px;"
+      alt="">
+    <span class="h4 pl-2">Product Survey</span>
+  </div>
+  <div class="card-body">
+    <!--Form-->
+    <div class="alert alert-info">
+      {{formData | json}}</div>
+
+    <form [formGroup]="userForm">
+      <ol>
+        <div class="alert bg-dark">
+          <li>Are you satisfying with our product services?</li>
+          <div class="form-check">
+            <div class="row p-4">
+              <div class="col-sm-6">
+                <input class="form-check-input" type="radio" value="Satisfied" formControlName="product_satisfaction" name="question1"
+                  id="one">
+                <label class="form-check-label pr-5" for="one">
+                  Satisfied
+                </label>
+              </div>
+              <div class="col-sm-6">
+                <input class="form-check-input" type="radio" value="Unsatisfied" formControlName="product_satisfaction" name="question1"
+                  id="two">
+                <label class="form-check-label pr-5" for="two">
+                  Unsatisfied
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="alert bg-danger">
+          <li>Are you Comfortable with the Pricing ? </li>
+          <div class="form-check">
+            <div class="row p-4">
+              <div class="col-sm-6">
+                <input class="form-check-input" type="radio" value="comparativelyHigh" formControlName="price_graph" name="question2"
+                  id="three">
+                <label class="form-check-label pr-5" for="three">
+                  High
+                </label>
+              </div>
+              <div class="col-sm-6">
+                <input class="form-check-input" type="radio" value="comparativelyLow" formControlName="price_graph" name="question2"
+                  id="four">
+                <label class="form-check-label pr-5" for="four">
+                  Low
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Question No : 03-->
+        <div class="alert bg-dark">
+          <li>Are you Comfortable with the Pricing ? </li>
+          <div class="form-check">
+            <div class="row p-4">
+              <div class="col-sm-6">
+                <input class="form-check-input" type="radio" value="Impressed" formControlName="quality" name="question3"
+                  id="five">
+                <label class="form-check-label pr-5" for="five">
+                  Rich
+                </label>
+              </div>
+              <div class="col-sm-6">
+                <input class="form-check-input" type="radio" value="It's Really Bad" formControlName="quality" name="question3"
+                  id="six">
+                <label class="form-check-label pr-5" for="six">
+                  Poor
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Question No : 04-->
+        <div class="alert bg-danger">
+          <li>Are you Satisfied with Packing Usage ? </li>
+          <div class="form-check">
+            <div class="row p-4">
+              <div class="col-sm-6">
+                <input class="form-check-input" type="radio" value="Satisfied" formControlName="packing_effort" name="question4"
+                  id="seven">
+                <label class="form-check-label pr-5" for="seven">
+                  Satisfied
+                </label>
+              </div>
+              <div class="col-sm-6">
+                <input class="form-check-input" type="radio" value="You can put More Effort" formControlName="packing_effort" name="question4"
+                  id="eight">
+                <label class="form-check-label pr-5" for="eight">
+                  Unsatisfied
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Question No : 05-->
+        <div class="alert bg-dark">
+          <li>Would you prefer this product to some one ? </li>
+          <div class="form-check">
+            <div class="row p-4">
+              <div class="col-sm-6">
+                <input class="form-check-input" type="radio" value="Yes It is Preferable !" formControlName="preferrable_to_others" name="question5"
+                  id="nine">
+                <label class="form-check-label pr-5" for="nine">
+                  Prefferable
+                </label>
+              </div>
+              <div class="col-sm-6">
+                <input class="form-check-input" type="radio" value="No I can't Preffer." formControlName="preferrable_to_others" name="question5"
+                  id="ten">
+                <label class="form-check-label pr-5" for="ten">
+                  Not Preferable
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+
+      </ol>
+      <button class="btn btn-dark ml-5 mr-3" type="submit" (click)="onSubmit()">Submit</button>
+      <button class="btn btn-danger" type="reset">Reset</button>
+    </form>
+  </div>
+  <div class="card-footer bg-dark text-white">Powered By Convene Team @2019</div>
+</div>

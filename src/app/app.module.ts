@@ -1,0 +1,29 @@
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { CarouselModule } from 'ngx-bootstrap';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { SurveyComponent } from './survey/survey.component';
+import { ReportComponent } from './report/report.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { HomeComponent } from './home/home.component';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    SurveyComponent,
+    ReportComponent,
+    HomeComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    CarouselModule.forRoot(),
+    ReactiveFormsModule,
+    FormsModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
