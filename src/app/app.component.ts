@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'conveneSurvey';
 
+  showLoginSuccess = true;
+  uName = localStorage.getItem('userName');
+
   
 }

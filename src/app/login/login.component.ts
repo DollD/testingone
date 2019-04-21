@@ -13,6 +13,7 @@ export class LoginComponent implements OnInit {
   user_email = localStorage.getItem('email');
   user_password = localStorage.getItem('password');
   uName = localStorage.getItem('userName');
+  showLoginErr = false;
   
 
   constructor(private route:Router, private fb : FormBuilder) { }
@@ -34,6 +35,7 @@ export class LoginComponent implements OnInit {
     else{
       this.loginForm.reset();
        this.route.navigate(['login']);
+       this.showLoginErr = true;
      }
     
 

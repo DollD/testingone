@@ -1,6 +1,5 @@
 .container-fluid{
     background-image: url(./../../assets/2.jpg);
-    color: aliceblue;
     height:100vh;
     background-size: cover;
 }

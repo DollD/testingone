@@ -10,6 +10,11 @@
           <form [formGroup]="loginForm">
             <!--Email-->
             <div class="form-group">
+                <p *ngIf="showLoginErr">
+                    <small [hidden]="false" class="text-danger">
+                      Invalid Credentials. Please Provide the right credentials.
+                    </small>
+                  </p>
               <label for="email">Email</label>
               <input type="email" class="form-control" formControlName="email" placeholder="Enter Your Email">
             </div>
@@ -23,7 +28,7 @@
             <button class="btn btn-danger ml-3" type="reset">Reset</button>
           </form>
         </div>
-        <div class="card-footer bg-dark text-white"><small>If you are not Registered Please <a routerLink="/register">Register</a> Here.</small></div>
+        <div class="card-footer bg-dark text-white"><small>Already Registered ??? Please <a routerLink="/register">Register</a> Here.</small></div>
       </div>
     </div>
   </div>
