@@ -5,9 +5,13 @@ import { SurveyComponent } from './survey/survey.component';
 import { ReportComponent } from './report/report.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent },
+  {path:'register',component:RegisterComponent },
+  {path:'login',component:LoginComponent },
   {path:'survey',component:SurveyComponent},
   {path:'report',component:ReportComponent},
   {path:'**',component:PageNotFoundComponent}

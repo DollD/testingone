@@ -1,46 +1,50 @@
-<div class="card">
-  <!-- <div *ngIf="" class="alert bg-success text-white text-center h5">Thank you For your valuble Report !</div> -->
-  <div class="card-header bg-dark text-white">Report On The User Survey.</div>
-  <div class="card-body">
-    <table class="table table-striped">
-      <thead class="bg-dark text-white">
-        <tr>
-          <th>Title</th>
-          <th>Report</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td scope="row">Product Satisfaction</td>
-          <td>{{collectedData.product_satisfaction}}</td>
+<div class="container-fluid m-0 p-0">
+    <div class="card">
+        <!-- <div *ngIf="" class="alert bg-success text-white text-center h5">Thank you For your valuble Report !</div> -->
+        <div class="card-header bg-dark text-white">Report On The User Survey.</div>
+        <div class="card-body p-1">
+          <table class="table table-striped">
+            <thead class="bg-dark text-white">
+              <tr>
+                <th>Title</th>
+                <th>Report</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row">Product Satisfaction</td>
+                <td>{{collectedData.product_satisfaction}}</td>
+                
+              </tr>
+              <tr>
+                <td scope="row">Price Graph comparing with the Previous Product</td>
+                <td>{{collectedData.price_graph}}</td>
+                
+              </tr>
+              <tr>
+                <td scope="row">Quality</td>
+                <td>{{collectedData.quality}}</td>
+                
+              </tr>
+              <tr>
+                <td scope="row">Packing Effort</td>
+                <td>{{collectedData.packing_effort}}</td>
+                
+              </tr>
+              <tr>
+                <td scope="row">Preferrable Product or not.</td>
+                <td>{{collectedData.preferrable_to_others}}</td>
+                
+              </tr>
+            </tbody>
+          </table>
           
-        </tr>
-        <tr>
-          <td scope="row">Price Graph comparing with the Previous Product</td>
-          <td>{{collectedData.price_graph}}</td>
-          
-        </tr>
-        <tr>
-          <td scope="row">Quality</td>
-          <td>{{collectedData.quality}}</td>
-          
-        </tr>
-        <tr>
-          <td scope="row">Packing Effort</td>
-          <td>{{collectedData.packing_effort}}</td>
-          
-        </tr>
-        <tr>
-          <td scope="row">Preferrable Product or not.</td>
-          <td>{{collectedData.preferrable_to_others}}</td>
-          
-        </tr>
-      </tbody>
-    </table>
-    
-  </div>
-  <div class="card-footer bg-dark text-white">
-   <button class="btn bg-danger btn-block text-white" (click)="deleteData()">Go To Another Survey</button>
-  </div>
+        </div>
+        <div class="card-footer bg-dark text-white">
+         <button class="btn bg-danger btn-block text-white" (click)="deleteData()">Go To Another Survey</button>
+        </div>
+      </div>
+      
+      
+      
 </div>
-

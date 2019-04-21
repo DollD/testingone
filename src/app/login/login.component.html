@@ -1,0 +1,30 @@
+<!--Login Form-->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-6 offset-sm-3">
+      <div class="card mt-5">
+        <div class="card-header bg-dark text-white">Login Here !</div>
+        <div class="card-body">
+          {{loginData | json}}
+          <!--Form Starts here.-->
+          <form [formGroup]="loginForm">
+            <!--Email-->
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" formControlName="email" placeholder="Enter Your Email">
+            </div>
+            <!--Password-->
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" formControlName="password" placeholder="Enter Your Password">
+            </div>
+            <!--Login Button-->
+            <button class="btn btn-success" type="submit" (click)="login()">Login</button>
+            <button class="btn btn-danger ml-3" type="reset">Reset</button>
+          </form>
+        </div>
+        <div class="card-footer bg-dark text-white"><small>If you are not Registered Please <a routerLink="/register">Register</a> Here.</small></div>
+      </div>
+    </div>
+  </div>
+</div>

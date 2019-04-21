@@ -9,9 +9,12 @@ import { Router } from '@angular/router';
 })
 export class SurveyComponent implements OnInit {
 
+  uName = localStorage.getItem('userName');
   userForm : FormGroup;
   formData : [];
-
+ 
+  
+  
 
   constructor(private fb : FormBuilder, private router:Router) { }
 
@@ -38,6 +41,7 @@ onSubmit(){
  localStorage.setItem('quality',this.userForm.value.quality);
  localStorage.setItem('packing_effort',this.userForm.value.packing_effort);
  localStorage.setItem('preferrable_to_others',this.userForm.value.preferrable_to_others);
+
 this.router.navigate(['report']);
  
 }

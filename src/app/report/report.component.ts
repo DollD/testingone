@@ -23,6 +23,8 @@ export class ReportComponent implements OnInit {
 
   deleteData(){
     localStorage.clear();
-    this.router.navigate(['survey']);
+    
+    confirm("Are you willing to give another survey as a new User ? If you are OK please register again with new details and give your survey poll by proper login!");
+    this.router.navigate(['register']);
   }
 }

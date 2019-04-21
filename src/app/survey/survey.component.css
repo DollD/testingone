@@ -1,6 +1,7 @@
 .card-body{
     background-image: url(./../../assets/4.jpg);
-    color: aliceblue
+    color: aliceblue;
+    background-size: cover;
 }
 
 li{
